@@ -1,5 +1,8 @@
 # Simple Gantt chart for LaTeX
 
+![image](https://github.com/jjholt/latex-gantt-chart/assets/876097/e057112c-a53a-446c-bc28-5a2f4708d2d8)
+
+
 ## Adding to your project
 There are a few ways to use this
 1. Copy the `tikzpicture` environment in `gant-chart.tex` directly into your project.
