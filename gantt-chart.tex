@@ -1,6 +1,6 @@
-\documentclass[crop,tikz]{standalone}
+\documentclass[tikz]{standalone}
 \begin{document}
-\begin{tikzpicture}[scale=0.8]
+\begin{tikzpicture}
     \newcommand{\task}[4]{
         \node[anchor=south east, text width=4cm, align=left] at (0.5, -#1-0.1) {#2}; 
         \draw[draw=blue,fill=blue!20, rounded corners=2pt, line width = 0.6pt] (#3 + 1, -#1 + 0.2) rectangle ++(#4, 0.6); 
@@ -24,7 +24,7 @@
     }
 
     \foreach \y in {0, -1, ..., -\lastTask} {
-        \draw[line width = 0.3pt, draw=grey!20] (-5, \y) -- (\endGrid, \y); % Horizontal lines for tasks
+        \draw[line width = 0.3pt, draw=grey!20] (-3.3, \y) -- (\endGrid, \y); % Horizontal lines for tasks
     }
 
 
@@ -38,9 +38,10 @@
 
 
     % Tasks
-    \task{1}{Task 1 with a long name}{1}{3}  % Task 1 starting at Q2 2024 and lasting 3 quarters
-    \task{2}{Another fairly long task name}{5}{2}  % Task 2 starting at Q2 2025 and lasting 2 quarters
-    \task{3}{A very very long task name to test wrapping}{9}{4}  % Task 3 starting at Q2 2026 and lasting 4 quarters
-    \task{4}{Task 4}{13}{2} % Task 4 starting at Q1 2027 and lasting 2 quarters
+    \task{1}{Task 1}{1}{2.5}  % Task 1 starting at Q2 2024 and lasting 2.5 quarters
+    \task{2}{Task 2 with a long text}{3}{2.8}  % Task 2 starting at Q4 2024 and lasting 2.8 quarters
+    \task{3}{Task 3 with even longer text}{5.3}{5.7}  % Task 3 starting at Q2 2025 and lasting 5.7 quarters
+    \task{4}{Task 4}{6}{2} % Task 4 starting at Q3 2025 and lasting 2 quarters
 \end{tikzpicture}
+
 \end{document}
