@@ -5,8 +5,20 @@
 
 ## Adding to your project
 There are a few ways to use this
-1. Copy the `tikzpicture` environment in `gant-chart.tex` directly into your project.
-2. Import the standalone file:
+1. Copy only the `tikzpicture` environment in `gant-chart.tex` directly into your project:
+```tex
+% main.tex
+\documentclass{article}
+\usepackage[mode=buildnew]{standalone}
+\usepackage{tikz}
+\begin{document}
+    \begin{figure}\centering
+    \resizebox{\textwidth}{!}{ \input{gantt-chart} }
+\end{figure}
+\end{document}
+```
+  
+2. Import the standalone file directly:
 ```tex
 % main.tex
 \documentclass{article}
