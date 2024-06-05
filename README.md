@@ -1,6 +1,5 @@
 # Simple Gantt chart for LaTeX
-
-![image](https://github.com/jjholt/latex-gantt-chart/assets/876097/e057112c-a53a-446c-bc28-5a2f4708d2d8)
+![image](https://github.com/jjholt/latex-gantt-chart/assets/876097/f7430075-e6bd-4756-8907-37a394047d2c)
 
 
 ## Adding to your project
